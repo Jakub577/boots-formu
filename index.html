@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Name:</span>
+        <input type="text"  placeholder="Imię" id="inputOdImienia" value="">
+    </div>
+        <p id="imie-error">Za krótkie imię </p>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Surname:</span>
+            <input type="text"  placeholder="Nazwisko" id="inputOdNazwiska" value="" >
+        </div>
+        <p id="nazwisko-error">Nazwisko nie może być krótsze niż 2 znaki.</p>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">@:</span>
+            <input type="email"  placeholder="Email" id="inputOdMeila" value="">
+        </div>
+        <p id="email-error" >Adres e-mail musi posiadać "@" w sobie.</p>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Kontakt:</span>
+            <input type="text"  placeholder="Telefon" id="inputOdNumeru" value="">
+        </div>
+        <p id="numer-error">Numer telefonu musi mieć cyfry i tylko cyfry</p>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Wiadomość:</span>
+            <input type="text"  placeholder="Wiadomość do sprzedającego" id="inpputOdWiadomości" value="">
+        </div>
+        <p id="mess-error">Wiadomość do sprzedającego nie może być krótsza niż 10 znaków.</p>
+
+        <button onclick="przycisk()" type="button" class="btn btn-outline-info">Prześlij</button>
+
+        <script src="main.js"></script>
+</body>
+</html>
